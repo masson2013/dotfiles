@@ -105,10 +105,10 @@ source $ZSH/oh-my-zsh.sh
   export PATH=~/sublime_text:$PATH
   # export PATH=/usr/local/bin:$PATH
 
-  export  http_proxy="http://proxy-web.micron.com:80/"
-  export https_proxy="http://proxy-web.micron.com:80/"
-  export   ftp_proxy="http://proxy-web.micron.com:80/"
-  export    no_proxy="bitbucket.micron.com,localhost,127.0.0.1,10.107.146.124"
+  # export  http_proxy="http://proxy-web.micron.com:80/"
+  # export https_proxy="http://proxy-web.micron.com:80/"
+  # export   ftp_proxy="http://proxy-web.micron.com:80/"
+  # export    no_proxy="bitbucket.micron.com,localhost,127.0.0.1,10.107.146.124"
 
   # export http_proxy="http://proxy.micron.com:8080/"
   # export https_proxy="http://proxy.micron.com:8080/"
@@ -138,21 +138,21 @@ source $ZSH/oh-my-zsh.sh
   alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
   # alias jump='ssh -Y micron@10.107.146.32'
-  alias jumpb='ssh -X senma@bolcdelogin03'
+  # alias jumpb='ssh -X senma@bolcdelogin03'
   # alias jump='ssh -Y senma@thor.ddns.uark.edu'
-  alias jump='ssh -Y micron@10.107.146.80'
-  alias jump2='ssh -Y micron@10.107.146.109'
-  #alias jump3='ssh -Y micron@10.107.146.38'
-  alias jump3='ssh -Y micron@10.107.146.29'
-  #alias jump4='ssh -Y subtonic@67.135.211.55'
-  alias jump4='ssh -Y micron@10.107.146.98'
-  alias jump5='ssh -Y micron@10.107.146.124'
-  alias jump6='ssh -Y micron@10.107.146.96'
-  #alias jump2='ssh -Y micron@130.184.104.144'
-  #alias jump3='ssh -Y micron@130.184.104.102'
-  #alias jump3='ssh -Y micron@130.184.104.178'
-  #alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
-  #alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
+  # alias jump='ssh -Y micron@10.107.146.80'
+  # alias jump2='ssh -Y micron@10.107.146.109'
+  # alias jump3='ssh -Y micron@10.107.146.38'
+  # alias jump3='ssh -Y micron@10.107.146.29'
+  # alias jump4='ssh -Y subtonic@67.135.211.55'
+  # alias jump4='ssh -Y micron@10.107.146.98'
+  # alias jump5='ssh -Y micron@10.107.146.124'
+  # alias jump6='ssh -Y micron@10.107.146.96'
+  # alias jump2='ssh -Y micron@130.184.104.144'
+  # alias jump3='ssh -Y micron@130.184.104.102'
+  # alias jump3='ssh -Y micron@130.184.104.178'
+  # alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
+  # alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
   alias dus='du -sh *|sort -h'
   alias grep='grep --color'
   alias egrep='egrep --color'
