@@ -1,0 +1,21 @@
+{
+	"color_scheme": "Packages/Colorsublime - Themes/Flatland_Dark.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Hack",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"tab_size": 4,
+	"theme": "Nexus.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": false,
+	"word_wrap": "false"
+}

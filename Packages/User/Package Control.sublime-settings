@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"http_proxy": "proxy-web.micron.com:80",
+	"https_proxy": "proxy-web.micron.com:80",
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"LaTeXTools",
+		"Package Control",
+		"SystemVerilog",
+		"Theme - Nexus",
+		"Verilog"
+	]
+}

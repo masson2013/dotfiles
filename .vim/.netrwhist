@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/run/media/micron/Data/pre_data/senma_repo/pico.6.2/shan-sb852-vu7p'
+let g:netrw_dirhist_2='/run/media/micron/Data/pre_data/senma_repo/opencl_xilinx/pico_bsp_2018.2/pico_ac511_2018.3_512_DDR_03/examples.ac511'
+let g:netrw_dirhist_3='/run/media/micron/Data2/senma_repo/opencl_xilinx/alex_opencl/sb852_vu9p_64g/micron_sb852_dynamic_bsp_64G/micron_sb852_dynamic'
+let g:netrw_dirhist_4='/run/media/micron/Data2/senma_repo/opencl_xilinx/Avengers/ref_projects/pico_sb852_vu9p_bsp_ddr4c1_board2/micron_sb852_vu9p'
+let g:netrw_dirhist_5='/media/micron/Data2/senma_repo/pico.6.2/pre-release-6.2.0.0/samples/StreamLoopback128/firmware/AC511_VU9P_StreamLoopback128_gen3x1_reversed/pcie3_uscale_plus_x4/pcie3_uscale_plus_x4_reversed/pcie3_uscale_plus_x4_reversed.srcs/pcie3_uscale_plus_x8/ip/pcie3_uscale_plus_x8/ip_0/synth'
+let g:netrw_dirhist_6='/media/micron/Data2/senma_repo/opencl_xilinx/vivado.2018.3/pico_sb852_vu9p_16g/micron_sb852_dynamic_1_0.NoGPIO.passed'
+let g:netrw_dirhist_7='/media/micron/Data2/senma_repo/opencl_xilinx/vivado.2018.3/pico_sb852_vu9p_16g_NoGPIO_MIGfixed/micron_sb852_dynamic_1_0/micron_sb852_dynamic_1_0.runs/impl_1'
+let g:netrw_dirhist_8='/Users/senma/.vim'
