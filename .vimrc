@@ -28,6 +28,7 @@ set autoindent
 " }}}
 " UI Layout {{{
 set number              " show line numbers
+set rnu 
 set showcmd             " show command in bottom bar
 set nocursorline        " highlight current line
 set wildmenu
@@ -39,6 +40,7 @@ set showmatch           " higlight matching parenthesis
 set ignorecase          " ignore case when searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight all matches
+set hls!
 " }}}
 " Folding {{{
 "=== folding ===
