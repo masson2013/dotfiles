@@ -64,3 +64,15 @@ Once installed as above, you may be able to create PDF files from latex sources 
 ```
 pdflatex latex_source_name.tex
 ```
+
+## Install NeoVim in MacOS:
+```
+$ brew update ; brew install --HEAD neovim
+$ alias vim='/usr/local/bin/vim'
+
+```
+# install vim plug
+```
+$ sh -c 'curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
