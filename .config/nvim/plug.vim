@@ -8,6 +8,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
  
 if has("nvim")
+  Plug 'windwp/nvim-autopairs'
+  Plug 'NLKNguyen/papercolor-theme'
   Plug 'ayu-theme/ayu-vim'
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
