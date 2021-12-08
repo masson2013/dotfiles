@@ -97,6 +97,7 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
   let ayucolor="mirage"
   colorscheme ayu
+  " colorscheme PaperColor
   highlight Normal guibg=none
 endif
 
@@ -108,28 +109,15 @@ endif
 set exrc
 " }}}
 
-" Folding "{{{
-" ------------------------------------------------------------------------------
-set foldenable          
-set foldmethod=indent   " fold based on indent / marker 
-set foldnestmax=10      " max 10 depth
-set foldlevel=10         " default foldleve. 0 is the top      
-" remap the space to open / close the fold
-nnoremap <space> za 
-" }}}
+" " Folding "{{{
+" " ------------------------------------------------------------------------------
+" set foldenable          
+" set foldmethod=indent   " fold based on indent / marker 
+" set foldnestmax=10      " max 10 depth
+" set foldlevel=0         " default foldleve. 0 is the top      
+" " remap the space to open / close the fold
+" nnoremap <space> za 
+" " }}}
 
-" SignColumn "{{{
-" -------------------------------------------------------------------------------
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("nvim-0.5.1") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
-"}}}
-
-
-" vim:foldmethod=marker:foldlevel=0
+" vim:foldmethod=marker:foldlevel=1
 
