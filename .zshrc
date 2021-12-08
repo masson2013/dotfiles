@@ -1,13 +1,50 @@
 # If you come from bash you might have to change your $PATH.
+  export PATH=$HOME/riscv/bin:$PATH
   export PATH=$HOME/bin:/usr/local/bin:$PATH
-  export PATH=/Users/senma/sublime_text_3:$PATH
+  export PATH=/$HOME/sublime_text_3:$PATH
   export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
-  export PATH=/Users/senma/Documents/GitHub/flutter/bin:$PATH
+  export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
+  export PATH=/$HOME/mytools:$PATH
+  export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
+  export PATH=/usr/local/opt/openssl@3/bin:$PATH
+
+  export CXX="clang++ -fcolor-diagnostics"
+  export CC="clang -fcolor-diagnostics"
+  export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3-mac
+
+  # export CXX="g++-11"
+  # export CC="gcc-11"
+  # export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3
+
+  export SYSTEMC_INCLUDE=$SYSTEMC_HOME/include
+  export SYSTEMC_LIBDIR=$SYSTEMC_HOME/lib
+  export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib:$LD_LIBRARY_PATH
+  # export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+  # export PKG_CONFIG_PATH="/usr/local/opt/openssl@3/lib/pkgconfig"
+  # export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
+  # export CPPFLAGS="-I/usr/local/opt/openssl@3/include"
+  #  export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1l_1
+  #  export OPENSSL_CRYPTO_LIBRARY=$OPENSSL_ROOT_DIR/lib
+  #  export OPENSSL_INCLUDE_DIR=$OPENSSL_ROOT_DIR/include
+
+  export SSL_CERT_FILE=/$HOME/.ca_crt/ca.crt
+  export REQUEST_CA_BUNDLE=/$HOME/.ca_crt/ca.crt
+
+
+  # export CMAKE_PREFIX_PATH=/$HOME/Documents/GitHub/amp_project/systemc-2.3.3/lib:/$HOME/Documents/GitHub/amp_project/systemc-2.3.3/include
+
+  # export Parquet_DIR=/usr/local/Cellar/parquet-tools/1.12.0
+  # export CMAKE_MODULE_PATH=$CMAKE_MODULE_PATH:$Parquet_DIR
 
 unsetopt beep
+HISTSIZE=20000
+SAVEHIST=20000
+HISTFILE=~/.zsh_history
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/Users/senma/.oh-my-zsh
+  export ZSH=/$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,7 +95,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git jira tmux tmuxinator screen history colorize cp)
+plugins=(iterm2 git gitfast jira tmux tmuxinator screen history colorize cp zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,36 +136,38 @@ source $ZSH/oh-my-zsh.sh
 
 
  
-  export PICOBASE="/Users/senma/senma_repo/pico"
-  export PATH=$PATH:/Users/senma
+  export PICOBASE="/$HOME/senma_repo/pico"
+  export PATH=$PATH:/$HOME
   export PATH=$PICOBASE/bin:$PATH
   export PATH=~/sublime_text:$PATH
   # export PATH=/usr/local/bin:$PATH
 
-  # export  http_proxy="http://proxy-web.micron.com:80/"
-  # export https_proxy="http://proxy-web.micron.com:80/"
-  # export   ftp_proxy="http://proxy-web.micron.com:80/"
-  # export    no_proxy="bitbucket.micron.com,localhost,127.0.0.1,10.107.146.124"
+  export  http_proxy="http://proxy-web.micron.com:80/"
+  export https_proxy="http://proxy-web.micron.com:80/"
+  export   ftp_proxy="http://proxy-web.micron.com:80/"
+  # export    no_proxy="*.micron.com,localhost,127.0.0.1,10.107.146.124"
+  export no_proxy="localhost,127.0.0.1,docker-registry.example.com,.corp"
 
   # export http_proxy="http://proxy.micron.com:8080/"
   # export https_proxy="http://proxy.micron.com:8080/"
   # export ftp_proxy="http://proxy.micron.com:8080/"
-  LIBERO_INSTALLED_DIR="/usr/local/microsemi/Libero_v11.8";export LIBERO_INSTALLED_DIR
+  # LIBERO_INSTALLED_DIR="/usr/local/microsemi/Libero_v11.8";export LIBERO_INSTALLED_DIR
   PATH=$LIBERO_INSTALLED_DIR/Libero/bin:$PATH;
   PATH=$LIBERO_INSTALLED_DIR/Synplify/bin:$PATH;
   PATH=$LIBERO_INSTALLED_DIR/Model/modeltech/linuxacoem:$PATH;export PATH
-  PATH=/usr/local/microsemi/SoftConsole_v4.0/arm-none-eabi-gcc/bin:$PATH;
-  PATH=/usr/local/microsemi/SoftConsole_v4.0/eclipse:$PATH;
+  # PATH=/usr/local/microsemi/SoftConsole_v4.0/arm-none-eabi-gcc/bin:$PATH;
+  # PATH=/usr/local/microsemi/SoftConsole_v4.0/eclipse:$PATH;
   #PATH=/usr/local/microsemi/Program_DebugV11.8/FlashPro/bin:$PATH;
-  PATH=/usr/local/microsemi/FlashProExpressStandalone_11_6/FlashPro/bin:$PATH;
+  # PATH=/usr/local/microsemi/FlashProExpressStandalone_11_6/FlashPro/bin:$PATH;
   # For Floating License from a License Server
   export LM_LICENSE_FILE=13140@10.107.146.80:$LM_LICENSE_FILE
   export SNPSLMD_LICENSE_FILE=13140@10.107.146.80:$SNPSLMD_LICENSE_FILE
   export SYNPLCTYD_LICENSE_FILE=13140@10.107.146.80:$SYNPLCTYD_LICENSE_FILE
-  export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
-  export LD_LIBRARY_PATH=/usr/local/microsemi/SoftConsole_v4.0/openocd/bin:$LD_LIBRARY_PATH
+  # export LD_LIBRARY_PATH=/usr/local/microsemi/SoftConsole_v4.0/openocd/bin:$LD_LIBRARY_PATH
   #export DISPLAY=:0
-
+ 
+  alias vim='/usr/local/bin/nvim'
+  alias gitc='git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7'
   #alias work='cd /media/senma/Data/pre_data/senma_repo'
   alias vivado='vivado -nojournal -nolog'
   #alias work='cd /media/micron/Data/pre_data/senma_repo'
@@ -138,21 +177,38 @@ source $ZSH/oh-my-zsh.sh
   alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
   # alias jump='ssh -Y micron@10.107.146.32'
-  # alias jumpb='ssh -X senma@bolcdelogin03'
+  alias jumpb='ssh -X senma@bolalog33'
   # alias jump='ssh -Y senma@thor.ddns.uark.edu'
-  # alias jump='ssh -Y micron@10.107.146.80'
-  # alias jump2='ssh -Y micron@10.107.146.109'
-  # alias jump3='ssh -Y micron@10.107.146.38'
-  # alias jump3='ssh -Y micron@10.107.146.29'
-  # alias jump4='ssh -Y subtonic@67.135.211.55'
-  # alias jump4='ssh -Y micron@10.107.146.98'
-  # alias jump5='ssh -Y micron@10.107.146.124'
-  # alias jump6='ssh -Y micron@10.107.146.96'
-  # alias jump2='ssh -Y micron@130.184.104.144'
-  # alias jump3='ssh -Y micron@130.184.104.102'
-  # alias jump3='ssh -Y micron@130.184.104.178'
-  # alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
-  # alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
+  #alias jump='ssh -Y micron@10.107.146.80'
+  # https://10.107.146.44
+  #alias jumpt='ssh -Y micron@10.107.146.58'
+  #alias jumpt='ssh -Y micron@sen7'
+  #alias DL4='ssh -Y micron@10.107.146.69'
+  #alias jumpx='ssh -Y micron@10.107.146.100'
+  #alias jump2='ssh -Y micron@10.107.146.109'
+  #alias jump3='ssh -Y micron@10.107.146.38'
+  #alias jump3='ssh -Y micron@10.107.146.29'
+  #alias jump4='ssh -Y subtonic@67.135.211.55'
+  #alias jump4='ssh -Y micron@10.107.146.98'
+  #alias jump5='ssh -Y micron@10.107.146.124'
+  #alias jump5='ssh -Y micron@sen5'
+  #alias jump6='ssh -Y micron@sen6'
+  #alias jump6='ssh -Y micron@10.107.146.96'
+  #alias jump2='ssh -Y micron@130.184.104.144'
+  #alias jump3='ssh -Y micron@130.184.104.102'
+  #alias jump3='ssh -Y micron@130.184.104.178'
+  #alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
+  #alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
+
+  alias jsen0='ssh -Y micron@sen0' #10.117.182.110 / 183.219
+  alias jsen2='ssh -Y micron@sen2' #10.117.182.225 
+  alias jsen3='ssh -Y micron@sen3' #10.117.182.105
+  alias jsen4='ssh -Y micron@sen4' #10.117.182.256 / 183.83
+  alias jsen5='ssh -Y micron@sen5' #10.117.182.249 / 183.130
+  alias jsen6='ssh -Y micron@sen6' #10.117.182.118 / 183.93
+  alias jsen7='ssh -Y micron@sen7' #10.117.183.11
+
+  alias pip3='pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
   alias dus='du -sh *|sort -h'
   alias grep='grep --color'
   alias egrep='egrep --color'
@@ -190,6 +246,8 @@ source $ZSH/oh-my-zsh.sh
   alias DT='tee ~/Desktop/terminalOut.txt'    # DT:           Pipe content to file on MacOS Desktop
   alias cbcopy='xclip -sel clip < '           # cbcopy        Copy content to clipboard
   addkey() { cat ~/.ssh/id_rsa.pub | ssh "$1" "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"; }   
+  alias latexpdf='pdflatex'
+  # alias Parquet='parquet-tools'
 
   #   lr:  Full Recursive Directory Listing
   #   ------------------------------------------
@@ -245,10 +303,12 @@ source $ZSH/oh-my-zsh.sh
   #   4.  SEARCHING
   #   ---------------------------
   
-  alias qfind="find . -name "                 # qfind:    Quickly search for file
-  ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
-  ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
-  ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+  # alias qfind="find . -name "                 # qfind:    Quickly search for file
+  # ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
+  # ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
+  # ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string
+  sfind() {find . -name "$1" |xargs grep -i "$2" --color}
+  rgrep() {grep -i -v "$1" |grep -i "$2" --color}
   
   #   ---------------------------
   #   5.  PROCESS MANAGEMENT
@@ -357,7 +417,13 @@ source $ZSH/oh-my-zsh.sh
   #   -------------------------------------------------------------------
       httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
   
-  
+  # export SBT_HOME="/usr/local/Cellar/sbt/1.3.8"
+  export SBT_HOME="/usr/local/Cellar/sbt/1.5.5"
+  export PATH=$PATH:$SBT_HOME/bin
+  # SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+  SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
+  # export SBT_OPTS="$SBT_OPTS -Dhttps.proxyHost=http://proxy-web.micron.com -Dhttps.proxyPort=80"
+  export SBT_OPTS="$SBT_OPTS -DsocksProxyHost=http://proxy-web.micron.com -DsocksProxyPort=80 -Djavax.net.ssl.trustStore=/$HOME/.keystore -Djavax.net.ssl.trustStorePassword=masson"
   
   
 
