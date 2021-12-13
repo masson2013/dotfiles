@@ -109,15 +109,15 @@ endif
 set exrc
 " }}}
 
-" " Folding "{{{
-" " ------------------------------------------------------------------------------
-" set foldenable          
-" set foldmethod=indent   " fold based on indent / marker 
-" set foldnestmax=10      " max 10 depth
-" set foldlevel=0         " default foldleve. 0 is the top      
-" " remap the space to open / close the fold
-" nnoremap <space> za 
-" " }}}
+" Folding "{{{
+" ------------------------------------------------------------------------------
+set foldenable          
+set foldmethod=indent   " fold based on indent / marker 
+set foldnestmax=10      " max 10 depth
+set foldlevel=10         " default foldleve. 0 is the top      
+" remap the space to open / close the fold
+nnoremap <space> za 
+" }}}
 
 " vim:foldmethod=marker:foldlevel=1
 
