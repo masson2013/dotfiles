@@ -4,6 +4,17 @@ inoremap jj <ESC>
 
 vnoremap <C-c> "*y :let @+=@*<CR>
 
+" Explorer configuration
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 20
+
+" Open file explorer
+" runtime ./after/plugin/explorer.rc.vim
+nnoremap <silent> <C-b> :call ToggleNetrw()<CR> 
+
 " >> Lsp key bindings
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
 nnoremap <silent> <C-]> <cmd>lua vim.lsp.buf.definition()<CR>
