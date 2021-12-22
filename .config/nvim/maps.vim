@@ -13,7 +13,7 @@ let g:netrw_winsize = 20
 
 " Open file explorer
 " runtime ./after/plugin/explorer.rc.vim
-nnoremap <silent> <C-b> :call ToggleNetrw()<CR> 
+nnoremap <silent> <C-q> :call ToggleNetrw()<CR> 
 
 " >> Lsp key bindings
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>

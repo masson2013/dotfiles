@@ -20,7 +20,14 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   
-  Plug 'hrsh7th/nvim-cmp'
+  Plug 'hrsh7th/nvim-cmp'             " Completion plugin
+  Plug 'hrsh7th/cmp-buffer'           " Buffer completions
+  Plug 'hrsh7th/cmp-path'             " Path completions
+  Plug 'hrsh7th/cmp-cmdline'          " cmdline completions
+  Plug 'saadparwaiz1/cmp_luasnip'     " Snippet completions
+
+  Plug 'L3MON4D3/LuaSnip'             " Snippet engine
+  Plug 'rafamadriz/friendly-snippets' " a bunch of snippets to use
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/nvim-treesitter-textobjects'
