@@ -48,6 +48,11 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily do comment
+  use "p00f/nvim-ts-rainbow" -- Rainbow for treesitter
+  -- use "nvim-lualine/lualine.nvim" -- StatusBar
+  use 'lewis6991/impatient.nvim' -- Speedup Loading of Lua Module
+  use "lukas-reineke/indent-blankline.nvim" -- The line of indent
 
   -- Colorschemes
   use "Shatur/neovim-ayu" -- ayu color theme
@@ -80,9 +85,6 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
-  -- Rainbow for treesitter
-  use "p00f/nvim-ts-rainbow"
-
   -- Nvim Tree
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
@@ -95,6 +97,10 @@ return packer.startup(function(use)
   use {
     'glepnir/galaxyline.nvim', branch = 'main',
   }
+
+  -- toggleterm
+  use "akinsho/toggleterm.nvim"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

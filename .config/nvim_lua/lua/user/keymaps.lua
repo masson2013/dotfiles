@@ -26,6 +26,7 @@ keymap("n", "wl", "<C-w>l", opts)
 
 -- Window
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
 
 -- Split window
 keymap("n", "ws", ":split<CR>", opts)
@@ -43,12 +44,19 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Bbye the buffer
 keymap("n", "wq", ":Bdelete<CR>", opts)
+keymap("n", "wx", ":Bwipeout!<CR>", opts)
 
 -- Telescope --
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
 keymap("n", "<leader>rg", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>/", "<cmd>Telescope current_buffer_fuzzy_find<CR>", opts)
 keymap("n", ";", "<cmd>Telescope buffers<CR>", opts)
+
+-- ToggleTerm --
+keymap("n", "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", opts)
+keymap("n", "<leader>ts", "<cmd>ToggleTerm size=10 direction=horizontal<CR>", opts)
+keymap("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<CR>", opts)
+
 
 -- **** Insert **** --
 -- Remap ESC to jj

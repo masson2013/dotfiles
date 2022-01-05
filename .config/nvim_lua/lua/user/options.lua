@@ -1,5 +1,6 @@
 -- :help options
 local options = {
+  termguicolors = true,
   fileencoding = "utf-8",
   errorbells = false,
   title = true,
@@ -38,7 +39,7 @@ local options = {
   laststatus = 2,
   lazyredraw = true,
   showmatch = false,
-  writebackup = fale,
+  writebackup = false,
   timeoutlen = 1000,
   splitbelow = true,
   splitright = true,
