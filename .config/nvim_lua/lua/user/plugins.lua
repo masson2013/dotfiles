@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily do comment
-  use "p00f/nvim-ts-rainbow" -- Rainbow for treesitter
+  -- use "p00f/nvim-ts-rainbow" -- Rainbow for treesitter, make it colorful
   -- use "nvim-lualine/lualine.nvim" -- StatusBar
   use 'lewis6991/impatient.nvim' -- Speedup Loading of Lua Module
   use "lukas-reineke/indent-blankline.nvim" -- The line of indent

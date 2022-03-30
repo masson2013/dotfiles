@@ -47,6 +47,10 @@ local options = {
   path = ".,/user/include,,*,**",
   wildignore = "*/node_modules/*",
   formatoptions = "tcqjr",
+  foldenable = true,
+  foldmethod = "indent",
+  foldnestmax = 10,
+  foldlevel = 10
 }
 
 vim.opt.shortmess:append "c"

@@ -57,6 +57,8 @@ keymap("n", "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", opts)
 keymap("n", "<leader>ts", "<cmd>ToggleTerm size=10 direction=horizontal<CR>", opts)
 keymap("n", "<leader>tv", "<cmd>ToggleTerm size=80 direction=vertical<CR>", opts)
 
+-- Folding --
+keymap("n", "[", "za", opts)
 
 -- **** Insert **** --
 -- Remap ESC to jj
@@ -84,5 +86,4 @@ keymap("x", "<A-j>", ":move .+1<CR>==", opts)
 keymap("x", "<A-k>", ":move .-2<CR>==", opts)
 -- Copy to the clipboard
 -- keymap("x", "<C-c>", "*y :let @+=@*<CR>", opts)
-
 

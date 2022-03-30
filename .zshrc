@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
-  export PATH=$HOME/riscv/bin:$PATH
+  export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
+  export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
+  export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
+  export PATH="$PATH:$RISCV/bin"
+  export PATH="$PATH:$RISCV_SIM/bin"
+  export PATH="$PATH:$RISCV_PK/bin"
   export PATH=$HOME/bin:/usr/local/bin:$PATH
   export PATH=/$HOME/sublime_text_3:$PATH
   export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
@@ -21,6 +26,8 @@
   export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib:$LD_LIBRARY_PATH
   # export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
   export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/lib"
+  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/include"
 
   # export PKG_CONFIG_PATH="/usr/local/opt/openssl@3/lib/pkgconfig"
   # export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
@@ -221,6 +228,8 @@ source $ZSH/oh-my-zsh.sh
   alias dir='exa -alb'
   alias ls='exa -albSs modified'
   alias ll='exa -abghHlSs modified'
+  alias clr='clear'
+  alias cls='clear'
 
   alias less='less -FSRXc'                    # Preferred 'less' implementation
   cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
