@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
-  export BREWHOME="$HOME/Documents/GitHub/homebrew"
-  export PATH="$PATH:$BREWHOME/bin"
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BREWHOME/lib
+  # export BREWHOME="$HOME/Documents/GitHub/homebrew"
+  # export PATH="$PATH:$BREWHOME/bin"
+  # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BREWHOME/lib
   # export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
   # export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
   # export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
@@ -9,15 +9,15 @@
   # export PATH="$PATH:$RISCV_SIM/bin"
   # export PATH="$PATH:$RISCV_PK/bin"
   export PATH=$HOME/bin:/usr/local/bin:$PATH
-  export PATH=/$HOME/sublime_text_3:$PATH
-  export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
-  export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
   export PATH=/$HOME/Documents/GitHub/mytools:$PATH
-  export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
-  export PATH=/usr/local/opt/openssl@3/bin:$PATH
-  export PATH="$PATH:/Users/senma/Library/Python/2.7/bin"
+  # export PATH=/$HOME/sublime_text_3:$PATH
+  # export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
+  # export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
+  # export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
+  # export PATH=/usr/local/opt/openssl@3/bin:$PATH
+  # export PATH="$PATH:/Users/senma/Library/Python/2.7/bin"
   # export PATH="$LLVM_HOME/bin:$PATH"
-  export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
+  # export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
 
   export CXX="clang++ -fcolor-diagnostics"
   export CC="clang -fcolor-diagnostics"
@@ -28,10 +28,10 @@
   # export LLVM_LIBDIR=$LLVM_HOME/lib
   # export LD_LIBRARY_PATH=$LLVM_LIBDIR:$LD_LIBRARY_PATH
 
-  export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3-macM1
-  export SYSTEMC_INCLUDE=$SYSTEMC_HOME/include
-  export SYSTEMC_LIBDIR=$SYSTEMC_HOME/lib
-  export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib:$LD_LIBRARY_PATH
+  # export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3-macM1
+  # export SYSTEMC_INCLUDE=$SYSTEMC_HOME/include
+  # export SYSTEMC_LIBDIR=$SYSTEMC_HOME/lib
+  # export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib:$LD_LIBRARY_PATH
 
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
@@ -53,8 +53,8 @@
   # export CC="gcc-11"
   # export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3
 
-  export SSL_CERT_FILE=/$HOME/.ca_crt/ca.crt
-  export REQUEST_CA_BUNDLE=/$HOME/.ca_crt/ca.crt
+  # export SSL_CERT_FILE=/$HOME/.ca_crt/ca.crt
+  # export REQUEST_CA_BUNDLE=/$HOME/.ca_crt/ca.crt
 
 
   # export CMAKE_PREFIX_PATH=/$HOME/Documents/GitHub/amp_project/systemc-2.3.3/lib:/$HOME/Documents/GitHub/amp_project/systemc-2.3.3/include
@@ -160,48 +160,48 @@ source $ZSH/oh-my-zsh.sh
 
 
  
-  export PICOBASE="/$HOME/senma_repo/pico"
+  # export PICOBASE="/$HOME/senma_repo/pico"
   export PATH=$PATH:/$HOME
-  export PATH=$PICOBASE/bin:$PATH
-  export PATH=~/sublime_text:$PATH
+  # export PATH=$PICOBASE/bin:$PATH
+  # export PATH=~/sublime_text:$PATH
   # export PATH=/usr/local/bin:$PATH
 
-  export  http_proxy="http://proxy-web.micron.com:80/"
-  export https_proxy="http://proxy-web.micron.com:80/"
-  export   ftp_proxy="http://proxy-web.micron.com:80/"
-  # export    no_proxy="*.micron.com,localhost,127.0.0.1,10.107.146.124"
-  export no_proxy="localhost,127.0.0.1,docker-registry.example.com,.corp"
+  # export  http_proxy="http://proxy-web.micron.com:80/"
+  # export https_proxy="http://proxy-web.micron.com:80/"
+  # export   ftp_proxy="http://proxy-web.micron.com:80/"
+  # # export    no_proxy="*.micron.com,localhost,127.0.0.1,10.107.146.124"
+  # export no_proxy="localhost,127.0.0.1,docker-registry.example.com,.corp"
 
   # export http_proxy="http://proxy.micron.com:8080/"
   # export https_proxy="http://proxy.micron.com:8080/"
   # export ftp_proxy="http://proxy.micron.com:8080/"
   # LIBERO_INSTALLED_DIR="/usr/local/microsemi/Libero_v11.8";export LIBERO_INSTALLED_DIR
-  PATH=$LIBERO_INSTALLED_DIR/Libero/bin:$PATH;
-  PATH=$LIBERO_INSTALLED_DIR/Synplify/bin:$PATH;
-  PATH=$LIBERO_INSTALLED_DIR/Model/modeltech/linuxacoem:$PATH;export PATH
+  # PATH=$LIBERO_INSTALLED_DIR/Libero/bin:$PATH;
+  # PATH=$LIBERO_INSTALLED_DIR/Synplify/bin:$PATH;
+  # PATH=$LIBERO_INSTALLED_DIR/Model/modeltech/linuxacoem:$PATH;export PATH
   # PATH=/usr/local/microsemi/SoftConsole_v4.0/arm-none-eabi-gcc/bin:$PATH;
   # PATH=/usr/local/microsemi/SoftConsole_v4.0/eclipse:$PATH;
   #PATH=/usr/local/microsemi/Program_DebugV11.8/FlashPro/bin:$PATH;
   # PATH=/usr/local/microsemi/FlashProExpressStandalone_11_6/FlashPro/bin:$PATH;
   # For Floating License from a License Server
-  export LM_LICENSE_FILE=13140@10.107.146.80:$LM_LICENSE_FILE
-  export SNPSLMD_LICENSE_FILE=13140@10.107.146.80:$SNPSLMD_LICENSE_FILE
-  export SYNPLCTYD_LICENSE_FILE=13140@10.107.146.80:$SYNPLCTYD_LICENSE_FILE
+  # export LM_LICENSE_FILE=13140@10.107.146.80:$LM_LICENSE_FILE
+  # export SNPSLMD_LICENSE_FILE=13140@10.107.146.80:$SNPSLMD_LICENSE_FILE
+  # export SYNPLCTYD_LICENSE_FILE=13140@10.107.146.80:$SYNPLCTYD_LICENSE_FILE
   # export LD_LIBRARY_PATH=/usr/local/microsemi/SoftConsole_v4.0/openocd/bin:$LD_LIBRARY_PATH
   #export DISPLAY=:0
  
   alias vim='nvim'
-  alias gitc='git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7'
+  # alias gitc='git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7'
   #alias work='cd /media/senma/Data/pre_data/senma_repo'
-  alias vivado='vivado -nojournal -nolog'
+  # alias vivado='vivado -nojournal -nolog'
   #alias work='cd /media/micron/Data/pre_data/senma_repo'
-  alias work='cd /run/media/micron/Data/pre_data/senma_repo' 
-  alias work2='cd /run/media/micron/Data2/senma_repo' 
+  # alias work='cd /run/media/micron/Data/pre_data/senma_repo' 
+  # alias work2='cd /run/media/micron/Data2/senma_repo' 
   # alias subl='sublime_text .'
-  alias subl='open -a Sublime\ Text'
+  # alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
   # alias jump='ssh -Y micron@10.107.146.32'
-  alias jumpb='ssh -X senma@bolalog33'
+  # alias jumpb='ssh -X senma@bolalog33'
   # alias jump='ssh -Y senma@thor.ddns.uark.edu'
   #alias jump='ssh -Y micron@10.107.146.80'
   # https://10.107.146.44
@@ -223,25 +223,27 @@ source $ZSH/oh-my-zsh.sh
   #alias jump3='ssh -Y micron@130.184.104.178'
   #alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
   #alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
-  alias jmy='ssh senma@senma-c02z9306lvch.micron.com'
-  alias jsen0='ssh -Y micron@10.117.183.119' # / 183.219
-  alias jsen2='ssh -Y micron@sen2' #10.117.182.225 
-  alias jsen3='ssh -Y micron@sen3' #10.117.182.105
-  alias jsen4='ssh -Y micron@sen4' #10.117.182.256 / 183.83
-  alias jsen5='ssh -Y micron@sen5' #10.117.182.249 / 183.130
-  alias jsen6='ssh -Y micron@sen6' #10.117.182.118 / 183.93
-  alias jsen7='ssh -Y micron@sen7' #10.117.183.11
+  # alias jmy='ssh senma@senma-c02z9306lvch.micron.com'
+  # alias jsen0='ssh -Y micron@10.117.183.119' # / 183.219
+  # alias jsen2='ssh -Y micron@sen2' #10.117.182.225 
+  # alias jsen3='ssh -Y micron@sen3' #10.117.182.105
+  # alias jsen4='ssh -Y micron@sen4' #10.117.182.256 / 183.83
+  # alias jsen5='ssh -Y micron@sen5' #10.117.182.249 / 183.130
+  # alias jsen6='ssh -Y micron@sen6' #10.117.182.118 / 183.93
+  # alias jsen7='ssh -Y micron@sen7' #10.117.183.11
 
-  alias jd1='ssh -Y micron@10.117.183.169'
+  # alias jd1='ssh -Y micron@10.117.183.169'
   # alias jd1='ssh -Y micron@10.117.183.213'
   # alias jd2='ssh -Y micron@AMS-DLA-U20-Master' #10.101.209.253
-  alias jd2='ssh -Y micron@10.101.209.253'
-  alias jd3='ssh -Y micron@10.101.209.49'
+  # alias jd2='ssh -Y micron@10.101.209.253'
+  # alias jd3='ssh -Y micron@10.101.209.49'
 
-  alias jan='ssh -Y micron@aiwanskia-mini'
+  # alias jan='ssh -Y micron@aiwanskia-mini'
 
-  alias pip3='pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
-  alias pip='pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
+  # alias pip3='pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
+  alias pip3='pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org'
+  # alias pip='pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
+  alias pip='pip --trusted-host pypi.org --trusted-host files.pythonhosted.org'
   alias dus='du -sh *|sort -h'
   alias grep='grep --color'
   alias egrep='egrep --color'
