@@ -89,8 +89,12 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
 
-  -- Bufferline
-  use "akinsho/bufferline.nvim"
+  -- Bufferline-- using packer.nvim
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "v2.*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
   use "moll/vim-bbye"
 
   -- StatusBar
@@ -99,7 +103,10 @@ return packer.startup(function(use)
   }
 
   -- toggleterm
-  use "akinsho/toggleterm.nvim"
+  use {
+    "akinsho/toggleterm.nvim", branch = 'main',
+  }
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim

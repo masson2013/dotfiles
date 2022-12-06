@@ -1,2 +1,5 @@
 .DS_Store
 packer_compiled.lua
+.vim/plugged
+.vim/pack
+.vim/*.zip

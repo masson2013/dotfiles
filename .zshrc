@@ -1,33 +1,47 @@
 # If you come from bash you might have to change your $PATH.
-  export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
-  export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
-  export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
-  export PATH="$PATH:$RISCV/bin"
-  export PATH="$PATH:$RISCV_SIM/bin"
-  export PATH="$PATH:$RISCV_PK/bin"
+  export BREWHOME="$HOME/Documents/GitHub/homebrew"
+  export PATH="$PATH:$BREWHOME/bin"
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BREWHOME/lib
+  # export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
+  # export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
+  # export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
+  # export PATH="$PATH:$RISCV/bin"
+  # export PATH="$PATH:$RISCV_SIM/bin"
+  # export PATH="$PATH:$RISCV_PK/bin"
   export PATH=$HOME/bin:/usr/local/bin:$PATH
   export PATH=/$HOME/sublime_text_3:$PATH
   export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
   export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
-  export PATH=/$HOME/mytools:$PATH
+  export PATH=/$HOME/Documents/GitHub/mytools:$PATH
   export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
   export PATH=/usr/local/opt/openssl@3/bin:$PATH
+  export PATH="$PATH:/Users/senma/Library/Python/2.7/bin"
+  # export PATH="$LLVM_HOME/bin:$PATH"
+  export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
 
   export CXX="clang++ -fcolor-diagnostics"
   export CC="clang -fcolor-diagnostics"
-  export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3-mac
+  # export CXX="g++ -fcolor-diagnostics"
+  # export CC="gcc -fcolor-diagnostics"
 
-  # export CXX="g++-11"
-  # export CC="gcc-11"
-  # export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3
+  # export LLVM_HOME=$HOME/Documents/GitHub/homebrew/opt/llvm
+  # export LLVM_LIBDIR=$LLVM_HOME/lib
+  # export LD_LIBRARY_PATH=$LLVM_LIBDIR:$LD_LIBRARY_PATH
 
+  export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3-macM1
   export SYSTEMC_INCLUDE=$SYSTEMC_HOME/include
   export SYSTEMC_LIBDIR=$SYSTEMC_HOME/lib
   export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib:$LD_LIBRARY_PATH
-  # export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
-  export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/lib"
-  export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/include"
+
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+  # export LDFLAGS="-L/Users/senma/Documents/GitHub/homebrew/opt/llvm/lib"
+  # export CPPFLAGS="-I/Users/senma/Documents/GitHub/homebrew/opt/llvm/include"
+
+  # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/lib"
+  # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/include"
+
 
   # export PKG_CONFIG_PATH="/usr/local/opt/openssl@3/lib/pkgconfig"
   # export LDFLAGS="-L/usr/local/opt/openssl@3/lib"
@@ -35,6 +49,9 @@
   #  export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl@1.1/1.1.1l_1
   #  export OPENSSL_CRYPTO_LIBRARY=$OPENSSL_ROOT_DIR/lib
   #  export OPENSSL_INCLUDE_DIR=$OPENSSL_ROOT_DIR/include
+  # export CXX="g++-11"
+  # export CC="gcc-11"
+  # export SYSTEMC_HOME=$HOME/Documents/GitHub/Learn/Learn_Systemc/Tools/systemc-2.3.3
 
   export SSL_CERT_FILE=/$HOME/.ca_crt/ca.crt
   export REQUEST_CA_BUNDLE=/$HOME/.ca_crt/ca.crt
@@ -173,7 +190,7 @@ source $ZSH/oh-my-zsh.sh
   # export LD_LIBRARY_PATH=/usr/local/microsemi/SoftConsole_v4.0/openocd/bin:$LD_LIBRARY_PATH
   #export DISPLAY=:0
  
-  alias vim='/usr/local/bin/nvim'
+  alias vim='nvim'
   alias gitc='git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7'
   #alias work='cd /media/senma/Data/pre_data/senma_repo'
   alias vivado='vivado -nojournal -nolog'
@@ -206,8 +223,8 @@ source $ZSH/oh-my-zsh.sh
   #alias jump3='ssh -Y micron@130.184.104.178'
   #alias jump3='ssh -Y micron@uaf132959.ddns.uark.edu'
   #alias jump3='ssh -Y micron@uaf132958.ddns.uark.edu'
-
-  alias jsen0='ssh -Y micron@sen0' #10.117.182.110 / 183.219
+  alias jmy='ssh senma@senma-c02z9306lvch.micron.com'
+  alias jsen0='ssh -Y micron@10.117.183.119' # / 183.219
   alias jsen2='ssh -Y micron@sen2' #10.117.182.225 
   alias jsen3='ssh -Y micron@sen3' #10.117.182.105
   alias jsen4='ssh -Y micron@sen4' #10.117.182.256 / 183.83
@@ -215,7 +232,16 @@ source $ZSH/oh-my-zsh.sh
   alias jsen6='ssh -Y micron@sen6' #10.117.182.118 / 183.93
   alias jsen7='ssh -Y micron@sen7' #10.117.183.11
 
+  alias jd1='ssh -Y micron@10.117.183.169'
+  # alias jd1='ssh -Y micron@10.117.183.213'
+  # alias jd2='ssh -Y micron@AMS-DLA-U20-Master' #10.101.209.253
+  alias jd2='ssh -Y micron@10.101.209.253'
+  alias jd3='ssh -Y micron@10.101.209.49'
+
+  alias jan='ssh -Y micron@aiwanskia-mini'
+
   alias pip3='pip3 --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
+  alias pip='pip --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://proxy-web.micron.com:80'
   alias dus='du -sh *|sort -h'
   alias grep='grep --color'
   alias egrep='egrep --color'
@@ -230,6 +256,8 @@ source $ZSH/oh-my-zsh.sh
   alias ll='exa -abghHlSs modified'
   alias clr='clear'
   alias cls='clear'
+
+  alias grt='git remote -v'
 
   alias less='less -FSRXc'                    # Preferred 'less' implementation
   cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
@@ -312,7 +340,7 @@ source $ZSH/oh-my-zsh.sh
   #   4.  SEARCHING
   #   ---------------------------
   
-  # alias qfind="find . -name "                 # qfind:    Quickly search for file
+  alias qfind="find . -name "                 # qfind:    Quickly search for file
   # ff () { /usr/bin/find . -name "$@" ; }      # ff:       Find file under the current directory
   # ffs () { /usr/bin/find . -name "$@"'*' ; }  # ffs:      Find file whose name starts with a given string
   # ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name ends with a given string

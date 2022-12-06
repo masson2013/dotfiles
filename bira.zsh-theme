@@ -22,8 +22,9 @@ else
   fi
 fi
 local git_branch='$(git_prompt_info)%{$reset_color%}'
+local git_commit='%{$fg[green]%}‹$(git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7)›%{$reset_color%}'
 
-PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}
+PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch}- ${git_commit}
 ╰─%B${user_symbol}%b "
 RPS1="%B${return_code}%b"
 
