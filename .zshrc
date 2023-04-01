@@ -16,8 +16,15 @@
   # export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
   # export PATH=/usr/local/opt/openssl@3/bin:$PATH
   # export PATH="$PATH:/Users/senma/Library/Python/2.7/bin"
+  export PYTHON3_HOME=/Users/senma/Library/Python/3.9
+  export PATH=$PATH:$PYTHON3_HOME/bin
   # export PATH="$LLVM_HOME/bin:$PATH"
   # export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
+  export CARGO_HOME=/Users/senma/.cargo
+  export PATH=$PATH:$CARGO_HOME/bin
+
+  export VFORMAT_HOME=/Users/senma/Documents/Github/verilog-format
+  export PATH=$PATH:$VFORMAT_HOME/bin
 
   export CXX="clang++ -fcolor-diagnostics"
   export CC="clang -fcolor-diagnostics"
