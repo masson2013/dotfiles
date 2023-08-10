@@ -1,7 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-  # export BREWHOME="$HOME/Documents/GitHub/homebrew"
-  # export PATH="$PATH:$BREWHOME/bin"
-  # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$BREWHOME/lib
+  export HOME_TAILSCALE="/Applications/Tailscale.app/Contents/MacOS"
+  export HOMEBREW="/opt/homebrew"
+  export PATH="$PATH:$HOMEBREW/bin:$HOME_TAILSCALE"
+  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOMEBREW/lib
   # export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
   # export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
   # export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
@@ -15,15 +16,15 @@
   # export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
   # export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
   # export PATH=/usr/local/opt/openssl@3/bin:$PATH
-  # export PATH="$PATH:/Users/senma/Library/Python/2.7/bin"
-  export PYTHON3_HOME=/Users/senma/Library/Python/3.9
+  # export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+  export PYTHON3_HOME=$HOME/Library/Python/3.9
   export PATH=$PATH:$PYTHON3_HOME/bin
   # export PATH="$LLVM_HOME/bin:$PATH"
   # export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
-  export CARGO_HOME=/Users/senma/.cargo
+  export CARGO_HOME=$HOME/.cargo
   export PATH=$PATH:$CARGO_HOME/bin
 
-  export VFORMAT_HOME=/Users/senma/Documents/Github/verilog-format
+  export VFORMAT_HOME=$HOME/Documents/Github/verilog-format
   export PATH=$PATH:$VFORMAT_HOME/bin
 
   export CXX="clang++ -fcolor-diagnostics"
@@ -43,8 +44,8 @@
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib
   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
-  # export LDFLAGS="-L/Users/senma/Documents/GitHub/homebrew/opt/llvm/lib"
-  # export CPPFLAGS="-I/Users/senma/Documents/GitHub/homebrew/opt/llvm/include"
+  # export LDFLAGS="-L$HOME/Documents/GitHub/homebrew/opt/llvm/lib"
+  # export CPPFLAGS="-I$HOME/Documents/GitHub/homebrew/opt/llvm/include"
 
   # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/lib"
   # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$RISCV/riscv64-unknow-elf/include"
@@ -207,7 +208,8 @@ source $ZSH/oh-my-zsh.sh
   # alias subl='sublime_text .'
   # alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
-  # alias jump='ssh -Y micron@10.107.146.32'
+
+  # alias jump='ssh -Y micron@192.168.0.227'
   # alias jumpb='ssh -X senma@bolalog33'
   # alias jump='ssh -Y senma@thor.ddns.uark.edu'
   #alias jump='ssh -Y micron@10.107.146.80'
@@ -222,8 +224,10 @@ source $ZSH/oh-my-zsh.sh
   #alias jump4='ssh -Y subtonic@67.135.211.55'
   #alias jump4='ssh -Y micron@10.107.146.98'
   #alias jump5='ssh -Y micron@10.107.146.124'
-  #alias jump5='ssh -Y micron@sen5'
-  #alias jump6='ssh -Y micron@sen6'
+  alias jump5='ssh -Y micron@sen5' #192.168.1.134'
+  alias jump6='ssh -Y micron@sen6' #192.168.1.126
+  alias jnas='ssh admin@192.168.1.112'
+  alias jumps1='ssh senma@100.89.221.7'
   #alias jump6='ssh -Y micron@10.107.146.96'
   #alias jump2='ssh -Y micron@130.184.104.144'
   #alias jump3='ssh -Y micron@130.184.104.102'
@@ -397,7 +401,9 @@ source $ZSH/oh-my-zsh.sh
   #   6.  NETWORKING
   #   ---------------------------
  
-  alias myip="ifconfig |grep 'inet addr:' | grep -v '127.0.0.1' |tail -1 |cut -d: -f 2 |awk '{print \$1}'"
+  # alias myips="ifconfig |grep 'inet ' | grep -v '127.0.0.1' | tail -1 | cut -d: -f2 | awk '{print \$2}'"
+  alias myips="ifconfig | grep -A 4 'en' | grep -B 4 'inet ' | grep -v 'options=' | grep -v 'ether ' | grep -v 'inet6 ' | sed 's/^.*inet //g' | sed 's/-->.*$//g' | sed 's/ .*$//g'"
+  # alias myip="ifconfig |grep 'inet addr:' | grep -v '127.0.0.1' |tail -1 |cut -d: -f 2 |awk '{print \$1}'"
   # alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
   alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
   alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
