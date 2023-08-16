@@ -55,7 +55,8 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim" -- The line of indent
 
   -- Colorschemes
-  use "Shatur/neovim-ayu" -- ayu color theme
+  -- use "Shatur/neovim-ayu" -- ayu color theme
+  use "ayu-theme/ayu-vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -76,7 +77,7 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
+  -- use "nvim-telescope/telescope.nvim"
 
   -- Treesitter
   use {
@@ -105,7 +106,7 @@ return packer.startup(function(use)
   -- toggleterm
   use {
     "akinsho/toggleterm.nvim", branch = 'main',
-  }
+  }  
 
 
 

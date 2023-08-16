@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-  export HOME_TAILSCALE="/Applications/Tailscale.app/Contents/MacOS"
-  export HOMEBREW="/opt/homebrew"
-  export PATH="$PATH:$HOMEBREW/bin:$HOME_TAILSCALE"
-  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOMEBREW/lib
+  # export HOME_TAILSCALE="/Applications/Tailscale.app/Contents/MacOS"
+  # export HOMEBREW="/opt/homebrew"
+  # export PATH="$PATH:$HOMEBREW/bin:$HOME_TAILSCALE"
+  # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOMEBREW/lib
+  
   # export RISCV="/usr/local/Cellar/riscv-gnu-toolchain/master"
   # export RISCV_SIM="/usr/local/Cellar/riscv-isa-sim/master"
   # export RISCV_PK="/usr/local/Cellar/riscv-pk/master"
@@ -27,8 +28,8 @@
   export VFORMAT_HOME=$HOME/Documents/Github/verilog-format
   export PATH=$PATH:$VFORMAT_HOME/bin
 
-  export CXX="clang++ -fcolor-diagnostics"
-  export CC="clang -fcolor-diagnostics"
+  # export CXX="clang++ -fcolor-diagnostics"
+  # export CC="clang -fcolor-diagnostics"
   # export CXX="g++ -fcolor-diagnostics"
   # export CC="gcc -fcolor-diagnostics"
 
@@ -224,10 +225,10 @@ source $ZSH/oh-my-zsh.sh
   #alias jump4='ssh -Y subtonic@67.135.211.55'
   #alias jump4='ssh -Y micron@10.107.146.98'
   #alias jump5='ssh -Y micron@10.107.146.124'
-  alias jump5='ssh -Y micron@sen5' #192.168.1.134'
-  alias jump6='ssh -Y micron@sen6' #192.168.1.126
-  alias jnas='ssh admin@192.168.1.112'
-  alias jumps1='ssh senma@100.89.221.7'
+  # alias jump5='ssh -Y micron@sen5' #192.168.1.134'
+  # alias jump6='ssh -Y micron@sen6' #192.168.1.126
+  # alias jnas='ssh admin@192.168.1.112'
+  # alias jumps1='ssh senma@100.89.221.7'
   #alias jump6='ssh -Y micron@10.107.146.96'
   #alias jump2='ssh -Y micron@130.184.104.144'
   #alias jump3='ssh -Y micron@130.184.104.102'
