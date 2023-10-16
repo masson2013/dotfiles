@@ -16,7 +16,8 @@ $ sudo vim /etc/tigervnc/vncserver-config-mandatory
   $AlwaysShared = "yes";
 
 $ vim ~/.vnc/xstartup
-`bash`
+
+``` bash
 #!/bin/sh
 
 test x"$SHELL" = x"" && SHELL=/bin/bash
@@ -34,7 +35,7 @@ export GNOME_SHELL_SESSION_MODE=ubuntu
 dbus-launch --exit-with-session xfce4-session
 EOF
 vncserver -kill $DISPLAY
-``
+```
 
 Don't need to manually create a tigervncserver@:3.service. Server will call /lib/systemd/system/tigervncserver@service 
 Directly enable the service with the display number.
