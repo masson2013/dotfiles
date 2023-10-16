@@ -1,3 +1,52 @@
+## Basic Install Ubuntu 22.04
+$ sudo apt install neovim tmux build-essential exa gnome-tweak meld net-tools perl
+$ sudo apt install verilator
+$ sudo apt install zlib1g zlib1g-dev
+$ sudo apt install mdadm brasero
+
+## VNC Ubuntu 22.04
+$ sudo apt install tigervnc-standalone-server
+$ sudo apt install xfce4 xfce4-goodies
+$ vncpasswd
+$ sudo vim /etc/tigervnc/vncserver.users
+  :3 senma
+$ sudo vim /etc/tigervnc/vncserver-config-mandatory
+  $geometry="1920x1080";
+  $localhost = "no";
+  $AlwaysShared = "yes";
+
+$ vim ~/.vnc/xstartup
+`bash`
+#!/bin/sh
+
+test x"$SHELL" = x"" && SHELL=/bin/bash
+test x"$1"     = x"" && set -- default
+
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+
+vncconfig -iconic &
+"$SHELL" -l << EOF
+export XDG_SESSION_TYPE=x11
+export GNOME_SHELL_SESSION_MODE=ubuntu
+export GNOME_SHELL_SESSION_MODE=ubuntu
+# dbus-launch --exit-with-session xfce4-session --session=ubuntu
+dbus-launch --exit-with-session xfce4-session
+EOF
+vncserver -kill $DISPLAY
+``
+
+Don't need to manually create a tigervncserver@:3.service. Server will call /lib/systemd/system/tigervncserver@service 
+Directly enable the service with the display number.
+$ sudo systemctl enable tigervncserver@:3
+$ sudo systemctl status tigervncserver@:3
+
+## NFS Ubuntu 22.04
+$ sudo apt install nfs-kernel-server
+$ sudo vim /etc/exports
+  /mnt/RAID_DATA/senma_repo *(rw,async,all_squash,no_subtree_check,anonuid=1000,anongid=1000)
+$ sudo systemctl restart nfs-kernel-server
+
 ## My Own Dotfiles
 /usr/local/bin/exa
 Move Theme - Nexus.sublime-package into Installed Packages

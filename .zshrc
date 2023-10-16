@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+  export XINSTALLER_SCALE=2
   # export HOME_TAILSCALE="/Applications/Tailscale.app/Contents/MacOS"
   # export HOMEBREW="/opt/homebrew"
   # export PATH="$PATH:$HOMEBREW/bin:$HOME_TAILSCALE"
@@ -27,6 +28,14 @@
 
   export VFORMAT_HOME=$HOME/Documents/Github/verilog-format
   export PATH=$PATH:$VFORMAT_HOME/bin
+  
+  # export VERILATOR_HOME=/opt/verilator
+  # export PATH=$PATH:$VERILATOR_HOME/bin
+  export VERILATOR_HOME=/usr/local/
+  export PATH=$PATH:$VERILATOR_HOME/bin
+
+  export IDEA_HOME=$HOME/Documents/GitHub/idea-IU-232.9921.47
+  export PATH=$PATH:$IDEA_HOME/bin
 
   # export CXX="clang++ -fcolor-diagnostics"
   # export CC="clang -fcolor-diagnostics"
@@ -94,7 +103,7 @@ ZSH_THEME="bira"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -197,12 +206,14 @@ source $ZSH/oh-my-zsh.sh
   # export SNPSLMD_LICENSE_FILE=13140@10.107.146.80:$SNPSLMD_LICENSE_FILE
   # export SYNPLCTYD_LICENSE_FILE=13140@10.107.146.80:$SYNPLCTYD_LICENSE_FILE
   # export LD_LIBRARY_PATH=/usr/local/microsemi/SoftConsole_v4.0/openocd/bin:$LD_LIBRARY_PATH
-  #export DISPLAY=:0
+  
+  # export DISPLAY=:1
  
   alias vim='nvim'
+  alias ideaj='idea.sh'
   # alias gitc='git log --abbrev-commit 2>/dev/null |grep commit |head -n 1 |colrm 1 7'
   #alias work='cd /media/senma/Data/pre_data/senma_repo'
-  # alias vivado='vivado -nojournal -nolog'
+  alias vivado='vivado -nojournal -nolog'
   #alias work='cd /media/micron/Data/pre_data/senma_repo'
   # alias work='cd /run/media/micron/Data/pre_data/senma_repo' 
   # alias work2='cd /run/media/micron/Data2/senma_repo' 
@@ -210,6 +221,11 @@ source $ZSH/oh-my-zsh.sh
   # alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
+  alias jump5='ssh -Y micron@sen5'
+  alias jump0='ssh -Y senma@sen0'
+  alias jump80='ssh -Y senma@sen80'
+  alias jumps1='ssh -Y senma@s1'
+  
   # alias jump='ssh -Y micron@192.168.0.227'
   # alias jumpb='ssh -X senma@bolalog33'
   # alias jump='ssh -Y senma@thor.ddns.uark.edu'
@@ -470,13 +486,13 @@ source $ZSH/oh-my-zsh.sh
   #   -------------------------------------------------------------------
       httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
   
-  # export SBT_HOME="/usr/local/Cellar/sbt/1.3.8"
-  export SBT_HOME="/usr/local/Cellar/sbt/1.5.5"
-  export PATH=$PATH:$SBT_HOME/bin
-  # SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
-  SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
-  # export SBT_OPTS="$SBT_OPTS -Dhttps.proxyHost=http://proxy-web.micron.com -Dhttps.proxyPort=80"
-  export SBT_OPTS="$SBT_OPTS -DsocksProxyHost=http://proxy-web.micron.com -DsocksProxyPort=80 -Djavax.net.ssl.trustStore=/$HOME/.keystore -Djavax.net.ssl.trustStorePassword=masson"
+  # # export SBT_HOME="/usr/local/Cellar/sbt/1.3.8"
+  # export SBT_HOME="/usr/local/Cellar/sbt/1.5.5"
+  # export PATH=$PATH:$SBT_HOME/bin
+  # # SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M"
+  # SBT_OPTS="-Xms512M -Xmx1536M -Xss1M -XX:MaxPermSize=256M"
+  # # export SBT_OPTS="$SBT_OPTS -Dhttps.proxyHost=http://proxy-web.micron.com -Dhttps.proxyPort=80"
+  # export SBT_OPTS="$SBT_OPTS -DsocksProxyHost=http://proxy-web.micron.com -DsocksProxyPort=80 -Djavax.net.ssl.trustStore=/$HOME/.keystore -Djavax.net.ssl.trustStorePassword=masson"
   
   
 
