@@ -280,8 +280,8 @@ source $ZSH/oh-my-zsh.sh
   alias mv='mv -iv'                           # Preferred 'mv' implementation
   alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
 
-#  alias ll='ls -aFGlAhp'                      # Preferred 'ls' implementation
-  alias dir='exa -alb'
+# # alias ll='ls -aFGlAhp'                      # Preferred 'ls' implementation
+  alias dir='ls -alb'
   alias ls='exa -albSs modified'
   alias ll='exa -abghHlSs modified'
   alias clr='clear'
@@ -498,3 +498,4 @@ source $ZSH/oh-my-zsh.sh
 
 
 #/Users/micron/torch/install/bin/torch-activate
+# source /home/senma/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
