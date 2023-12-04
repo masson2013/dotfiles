@@ -1,3 +1,4 @@
+  cd
 # If you come from bash you might have to change your $PATH.
   export XINSTALLER_SCALE=2
   # export HOME_TAILSCALE="/Applications/Tailscale.app/Contents/MacOS"
@@ -12,15 +13,15 @@
   # export PATH="$PATH:$RISCV_SIM/bin"
   # export PATH="$PATH:$RISCV_PK/bin"
   export PATH=$HOME/bin:/usr/local/bin:$PATH
-  export PATH=/$HOME/Documents/GitHub/mytools:$PATH
+  export PATH=$HOME/Documents/GitHub/mytools:$PATH
   # export PATH=/$HOME/sublime_text_3:$PATH
   # export PATH=/usr/local/texlive/2018/bin/x86_64-linux:$PATH
   # export PATH=/$HOME/Documents/GitHub/flutter/bin:$PATH
   # export PATH=/usr/local/Cellar/parquet-tools/1.12.0/bin:$PATH
   # export PATH=/usr/local/opt/openssl@3/bin:$PATH
   # export PATH="$PATH:$HOME/Library/Python/2.7/bin"
-  export PYTHON3_HOME=$HOME/Library/Python/3.9
-  export PATH=$PATH:$PYTHON3_HOME/bin
+  # export PYTHON3_HOME=$HOME/Library/Python/3.9
+  # export PATH=$PATH:$PYTHON3_HOME/bin
   # export PATH="$LLVM_HOME/bin:$PATH"
   # export PATH="$PATH:/usr/local/texlive/2022/bin/universal-darwin"
   export CARGO_HOME=$HOME/.cargo
@@ -36,6 +37,9 @@
 
   export IDEA_HOME=$HOME/Documents/GitHub/idea-IU-232.9921.47
   export PATH=$PATH:$IDEA_HOME/bin
+
+  export VERIBLE_HOME=$HOME/Documents/GitHub/verible-v0.0-3428-gcfcbb82b
+  export PATH=$PATH:$VERIBLE_HOME/bin
 
   # export CXX="clang++ -fcolor-diagnostics"
   # export CC="clang -fcolor-diagnostics"
@@ -137,7 +141,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(iterm2 git gitfast jira tmux tmuxinator screen history colorize cp zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(iterm2 git gitfast jira tmux tmuxinator screen history colorize cp zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -221,10 +225,18 @@ source $ZSH/oh-my-zsh.sh
   # alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
-  alias jump5='ssh -Y micron@sen5'
-  alias jump0='ssh -Y senma@sen0'
-  alias jump80='ssh -Y senma@sen80'
-  alias jumps1='ssh -Y senma@s1'
+  alias jumps0='ssh  -X senma@100.117.223.150'
+  alias jumps1='ssh -X senma@100.89.221.7'
+  alias jumps5='ssh  -X micron@100.98.174.6'
+  alias jump80='ssh -Y senma@100.92.68.142'
+  alias jumpsa='ssh -X senma@alpha.rcdc.pascalinesys.com'
+  alias jumpsb='ssh -X senma@bravo.rcdc.pascalinesys.com'
+  alias jumpsc='ssh -X senma@charlie.rcdc.pascalinesys.com'
+
+  tos1() { rsync -avP "$1" senma@100.89.221.7:~/share}
+  tosc() { rsync -avP "$1" senma@100.122.164.33:/export/home/senma/share}
+  tosen5() { rsync -avP "$1" micron@100.98.174.6:~/share}
+  tosen0() { rsync -avP "$1" senma@100.117.223.150:~/share}
   
   # alias jump='ssh -Y micron@192.168.0.227'
   # alias jumpb='ssh -X senma@bolalog33'

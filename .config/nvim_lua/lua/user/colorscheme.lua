@@ -1,5 +1,5 @@
--- local colorscheme = "ayu-mirage"
-local colorscheme = "ayu"
+local colorscheme = "ayu-mirage"
+-- local colorscheme = "ayu"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
@@ -8,9 +8,8 @@ if not status_ok then
 end
 
 -- Change the Background color to #1C1C1C in the lua/ayu/colors.lua
-
--- require('ayu').setup({
---   overrides = {
---     IncSearch = {fg = '#FFFFFF'}
---   }
--- })
+require('ayu').setup({
+  overrides = {
+    IncSearch = {fg = '#FFFFFF'}
+  }
+})

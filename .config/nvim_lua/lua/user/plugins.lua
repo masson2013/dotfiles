@@ -55,8 +55,8 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim" -- The line of indent
 
   -- Colorschemes
-  -- use "Shatur/neovim-ayu" -- ayu color theme
-  use "ayu-theme/ayu-vim"
+  use "Shatur/neovim-ayu" -- ayu color theme
+  -- use "ayu-theme/ayu-vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
