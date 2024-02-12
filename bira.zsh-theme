@@ -7,7 +7,7 @@ if [[ $UID -eq 0 ]]; then
     local user_symbol='#'
 else
     # local user_host='%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}'
-    local user_host="%{$terminfo[bold]$fg[green]%}%n@%m ($(ifconfig | grep 'inet ' | grep -v '127.0.0.1' | tail -1 | cut -d: -f2 | awk '{print $2}'))%{$reset_color%}"
+    local user_host="%{$terminfo[bold]$fg[green]%}%n@$(ifconfig | grep 'inet ' | grep -v '127.0.0.1' | tail -1 | cut -d: -f2 | awk '{print $2}')(%m)%{$reset_color%}"
     local user_symbol='>'
 fi
 

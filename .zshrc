@@ -221,10 +221,20 @@ source $ZSH/oh-my-zsh.sh
   # alias subl='open -a Sublime\ Text'
   alias gitlog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
-  alias jump5='ssh -Y micron@sen5'
-  alias jump0='ssh -Y senma@sen0'
-  alias jump80='ssh -Y senma@sen80'
-  alias jumps1='ssh -Y senma@s1'
+  alias jumps0='ssh  -X senma@100.117.223.150'
+  alias jumps1='ssh -X senma@100.89.221.7'
+  alias jumps5='ssh  -X micron@100.98.174.6'
+  alias jump80='ssh -Y senma@100.92.68.142'
+  alias jumpsa='ssh -X senma@100.122.164.33'
+  # alias jumpsb='ssh -X senma@bravo.rcdc.pascalinesys.com'
+  # alias jumpsc='ssh -X senma@charlie.rcdc.pascalinesys.com'
+
+  addkey() { cat ~/.ssh/id_rsa.pub | ssh "$2" "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"; }   
+  tos1() { rsync -avP "$1" senma@100.89.221.7:~/share}
+  tosc() { rsync -avP "$1" senma@100.122.164.33:/export/home/senma/share}
+  tosb() { rsync -avP "$1" senma@100.122.164.33:/export/home/senma/share}
+  tosen5() { rsync -avP "$1" micron@100.98.174.6:~/share}
+  tosen0() { rsync -avP "$1" senma@100.117.223.150:~/share}
   
   # alias jump='ssh -Y micron@192.168.0.227'
   # alias jumpb='ssh -X senma@bolalog33'
